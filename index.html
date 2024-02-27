@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css"/>
+</head>
+<body>
+  <div class="container">
+      <form id="search-line">
+        <input type="text" placeholder="Enter a city.." id="search-input" />
+        <input type="submit" value="Search" />
+      </form>
+      <h1 id="current-city">Paris</h1>
+      <span class="curentMeasures">
+        <div class="currently">
+          <span id="current-date">Sunday</span>,
+          <span id="description">moderate rain</span>
+          <br />
+          Humidity: <strong class="measures" id="humidity"> 87%</strong>, Wind:
+          <strong class="measures" id="wind"> 7.2km/h</strong>
+        </div>
+        <div class="currentTemperature" id="current-temperature">
+          <span class="emoji">🔆</span>14°C
+        </div>
+      </span>
+      <footer>
+        The progect was coded by
+        <a href="https://uk.linkedin.com/" target="_blank"
+          >Viktoriia Morozenko</a
+        >
+        and is on <a href="https://github.com/" target="_blank">GitHub</a> and
+        hosted on <a href="https://www.netlify.com/" target="_blank">Netify</a>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+</html>
