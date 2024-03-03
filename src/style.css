@@ -63,6 +63,24 @@
       .emoji {
         font-size: 40px;
       }
+      
+      .weather-forecast{
+        margin-top: 20px;
+        color: #000;
+      }
+
+      .weather-forecast-date{
+        font-size: 16px;
+        opacity: 0.6;
+      }
+
+      .weather-forecast-min{
+        opacity: 0.6;
+      }
+
+      .weather-forecast-temperatures {
+        font-size: 13;
+      }
 
       .container {
         max-width: 600px;
