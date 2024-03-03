@@ -18,21 +18,24 @@ function displayWeather(response) {
   windElement.innerHTML = `${wind}km/h`;
 }
 
-function search(event) {
-  event.preventDefault();
-  let currentCity = document.querySelector("#current-city");
-  let searchInput = document.querySelector("#search-input");
-  let city = searchInput.value;
-
+function searchCity(city) {
   let apiKey = "af263868fba123db051ft28a00754f7o";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(displayWeather);
-  currentCity.innerHTML = city;
+}
+
+function searchSubmit(event) {
+  event.preventDefault();
+  let searchInput = document.querySelector("#search-input");
+
+  searchCity(searchInput.value);
 }
 
 let form = document.querySelector("#search-line");
-form.addEventListener("submit", search);
+form.addEventListener("submit", searchSubmit);
+
+searchCity("London");
 
 function formatDate(date) {
   let minutes = date.getMinutes();

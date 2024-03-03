@@ -37,6 +37,10 @@
         color: #3a4750;
       }
 
+      a {
+        color: rgb(125, 82, 240);
+      }
+
       .curentMeasures {
         display: flex;
         justify-content: space-between;
