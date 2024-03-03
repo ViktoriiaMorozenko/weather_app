@@ -13,17 +13,18 @@
         <input type="text" placeholder="Enter a city.." id="search-input" />
         <input type="submit" value="Search" />
       </form>
-      <h1 id="current-city"></h1>
       <span class="curentMeasures">
         <div class="currently">
-          <span id="current-date">Sunday</span>,
-          <span id="description">moderate rain</span>
+          <h1 id="current-city"></h1>
+          <span id="current-date"></span>,
+          <span id="description"></span>
           <br />
           Humidity: <strong class="measures" id="humidity"></strong>, Wind:
           <strong class="measures" id="wind"></strong>
         </div>
-        <div class="currentTemperature" id="current-temperature">
-          <span class="emoji"></span>
+        <div class="currentTemperature">
+          <div id="emoji"><img src="" class="emoji" /></div>
+          <div class="exactTemperature" id="current-temperature"></div>
         </div>
       </span>
       <div class="weather-forecast">
@@ -31,7 +32,7 @@
           <div class="col-2">
             <div class="weather-forecast-date">Thu</div>
             <img
-              src="https://www.google.com/url?sa=i&url=http%3A%2F%2Fderechosdelasvictimas.org.mx%2F%3Fm%3Dsun-t-vK5ANysj&psig=AOvVaw3XNDLWQtNGu9doxAVkorbr&ust=1709571954684000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCMD8wvvJ2IQDFQAAAAAdAAAAABAZ"
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png"
               width="34px" />
             <div class="weather-forecast-temperatures">
               <span class="weather-forecast-max">18°C</span>

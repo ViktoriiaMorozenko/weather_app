@@ -1,93 +1,99 @@
-      body {
-        font-family: serif;
-        background-color: rgb(247, 245, 251);
-      }
+body {
+  font-family: serif;
+  background-color: rgb(247, 245, 251);
+}
 
-      h1 {
-        font-family: cursive;
-        color: #303841;
-      }
+h1 {
+  font-family: cursive;
+  color: #303841;
+}
 
-      input[type="text"],
-      textarea {
-        background-color: rgb(247, 245, 251);
-        border: none;
-        border-radius: 5px;
-        width: 80%;
-        padding: 15px;
-        box-sizing: border-box;
-        margin-top: 6px;
-        margin-bottom: 16px;
-      }
+input[type="text"],
+textarea {
+  background-color: rgb(247, 245, 251);
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
 
-      input[type="submit"] {
-        background-color: rgb(125, 82, 240);
-        color: white;
-        padding: 15px 22px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
+input[type="submit"] {
+  background-color: rgb(125, 82, 240);
+  color: white;
+  padding: 15px 22px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-      footer {
-        font-family: cursive;
-        font-size: 13px;
-        margin: 55px 0 15px;
-        text-align: center;
-        color: #3a4750;
-      }
+footer {
+  font-family: cursive;
+  font-size: 13px;
+  margin: 55px 0 15px;
+  text-align: center;
+  color: #3a4750;
+}
 
-      a {
-        color: rgb(125, 82, 240);
-      }
+a {
+  color: rgb(125, 82, 240);
+}
 
-      .curentMeasures {
-        display: flex;
-        justify-content: space-between;
-      }
+.curentMeasures {
+  display: flex;
+  justify-content: space-between;
+}
 
-      .currently {
-        color: #3a4750;
-        padding: 3px;
-      }
+.currently {
+  color: #3a4750;
+  padding: 3px;
+}
 
-      .measures {
-        color: #be3144;
-      }
+.measures {
+  color: #be3144;
+}
 
-      .currentTemperature {
-        font-family: cursive;
-        font-size: 40px;
-      }
+.currentTemperature {
+  display: flex;
+  justify-content: center;
+}
 
-      .emoji {
-        font-size: 40px;
-      }
-      
-      .weather-forecast{
-        margin-top: 20px;
-        color: #000;
-      }
+.exactTemperature {
+  font-family: cursive;
+  font-size: 60px;
+  color: #303841;
+}
 
-      .weather-forecast-date{
-        font-size: 16px;
-        opacity: 0.6;
-      }
+.emoji {
+  width: 100px;
+}
 
-      .weather-forecast-min{
-        opacity: 0.6;
-      }
+.weather-forecast {
+  margin-top: 20px;
+  color: #000;
+}
 
-      .weather-forecast-temperatures {
-        font-size: 13;
-      }
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.6;
+}
 
-      .container {
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 40px;
-        margin-top: 50px;
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-      }
+.weather-forecast-min {
+  opacity: 0.6;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}

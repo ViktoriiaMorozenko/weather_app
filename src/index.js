@@ -1,13 +1,15 @@
 function displayWeather(response) {
   let cityElement = document.querySelector("#current-city");
   let temperatureElement = document.querySelector("#current-temperature");
-  let temperature = response.data.temperature.current;
+  let temperature = Math.round(response.data.temperature.current);
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
+  let iconElement = document.querySelector("#emoji");
+  let icon = `<img src="${response.data.condition.icon_url}" class="emoji" />`;
 
   cityElement.innerHTML = response.data.city;
-  temperatureElement.innerHTML = Math.round(temperature);
+  temperatureElement.innerHTML = `${icon} ${temperature}°C`;
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windElement.innerHTML = `${response.data.wind.speed}km/h`;
