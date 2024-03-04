@@ -71,6 +71,8 @@ a {
 }
 
 .weather-forecast {
+  display: flex;
+  justify-content: space-between;
   margin-top: 20px;
   color: #000;
 }

@@ -65,3 +65,32 @@ let currentDateELement = document.querySelector("#current-date");
 let currentDate = new Date();
 
 currentDateELement.innerHTML = formatDate(currentDate);
+
+function displayForecast() {
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+  <div class="weather-forecast-day">
+    <div class="weather-forecast-date">${day}</div>
+    <img
+      src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png"
+      width="34px"
+      class="weather-forecast-icon"
+    />
+    <div class="weather-forecast-temperatures">
+      <span class="weather-forecast-temperatures-max">18°C</span>
+      <span class="weather-forecast-temperatures-min">12°C</span>
+    </div>
+  </div>
+    `;
+  });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
+displayForecast();
